@@ -8,39 +8,9 @@
     background: #000;
     overflow: hidden;
 }
-.cursor-tr {
-    position: absolute;
-    pointer-events: none;
-    width: 35px;
-    height: 35px;
-    border: 3px solid white;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    transform: translate(-50%, -50%);
-    transition: mix-blend-mode 0.3s, width 0.3s, 
-    height 0.3s, top 0.1s, left 0.1s, background 0.3s;
-}
-.cursor-dot {
-    position: absolute;
-    pointer-events: none;
-    width: 6px;
-    height: 6px;
-    background: white;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    transform: translate(-50%, -50%);
-}
-.cursor-up {
-    width: 25px !important;
-    height: 25px !important;
-}
 .block {
     color: white;
-    width: 300px;
+    width: 350px;
     height: 100px;
     border-radius: 20px;
     font-family: monospace;
@@ -73,6 +43,7 @@
     background: linear-gradient(170deg, rgba(255,0,209,1) 20%, rgba(73,35,234,1) 39%, rgba(35,144,234,1) 52%, rgba(35,198,234,1) 62%, rgba(35,234,230,1) 75%, rgba(35,234,147,1) 95%);
     animation: gradient 3s ease infinite;
     background-size: 400% 400%;
+    cursor: pointer;
 }
 .block:hover::before {
     box-shadow: 0 -10px 40px 50px #00ffd04b, 0 10px 40px 50px #4000ff5e;
